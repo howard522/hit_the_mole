@@ -112,14 +112,13 @@ class _WhackAMolePageState extends State<WhackAMolePage> {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Center(
-                      child:
-                          moleVisible[index]
-                              ? Icon(
-                                Icons.pets,
-                                size: 40,
-                                color: Colors.brown[900],
-                              )
-                              : null,
+                      child: moleVisible[index]
+                          ? Image.asset(
+                              'assets/images/mole.png',
+                              width: 40,
+                              height: 40,
+                            )
+                          : null,
                     ),
                   ),
                 );
